@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="">
+<head>
+<title>Fraud detection - About</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+<style>
+    
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
+    display: inline;
+    
+}
+.intro-text {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    padding-top: 95px;
+    margin: 20px auto;
+    width: 70%;
+}
+.container {
+    width: 60%;
+    margin: 30px auto;
+    background-color: #fff;
+    margin-top: 95px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+input[type="submit"] {
+    background-color: #ee8a47;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #e0691a;
+}
+.result {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #4CAF50;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+.highlight {
+    color: #4CAF50;
+    font-weight: bold;
+}
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+.card {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+
+}
+ul{
+    display: inline;
+    padding-left: 25%;
+}
+li{
+    display: inline;
+    padding-left: 20px;
+    text-decoration: none;
+}
+li:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+</style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul class="nospace">
+        <li><a href="{% url 'home' %}"><i class="fas fa-home fa-lg"></i></a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href="#"><span>Fraud</span>Detection</a></h1>
+    </div>
+    <div class="one_half">
+      
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
+      <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image: url('{% static "images/demo/backgrounds/01.jpeg" %}');">
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Financial Fraud Detection</h6>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
+      <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="container">
+    <div class="section-title">
+        <h2>Enter Transaction Details</h2>
+    </div>
+    <form method="POST" action="{% url 'result_page' %}">
+        {% csrf_token %}
+        
+        <div class="form-section">
+            <label for="type">Transaction Type:</label>
+            <input type="text" name="type" id="type" required placeholder="e.g., Transfer, Cash In">
+
+            <label for="amount">Transaction Amount:</label>
+            <input type="text" name="amount" id="amount" required placeholder="e.g., 5000">
+
+            <label for="oldbalanceOrg">Old Balance (Org):</label>
+            <input type="text" name="oldbalanceOrg" id="oldbalanceOrg" required placeholder="e.g., 20000">
+
+            <label for="newbalanceOrig">New Balance (Org):</label>
+            <input type="text" name="newbalanceOrig" id="newbalanceOrig" required placeholder="e.g., 15000">
+
+            <label for="oldbalanceDest">Old Balance (Dest):</label>
+            <input type="text" name="oldbalanceDest" id="oldbalanceDest" required placeholder="e.g., 10000">
+
+            <label for="newbalanceDest">New Balance (Dest):</label>
+            <input type="text" name="newbalanceDest" id="newbalanceDest" required placeholder="e.g., 9500">
+
+            <input type="submit" value="Predict Fraud">
+        </div>
+    </form>
+
+    {% if result %}
+        <div class="result">
+            <h2>Prediction: <span class="highlight">{{ result }}</span></h2>
+        </div>
+    {% endif %}
+</div>    
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper gradient">
+  
+    <!-- ################################################################################################ -->
+ 
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2024 - All Rights Reserved - <a href="#">Financial Fraud Detection</a></p>
+    <p class="fl_right"></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

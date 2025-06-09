@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="">
+<head>
+<title>Fraud detection</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul class="nospace">
+        <li><a href="#"><i class="fas fa-home fa-lg"></i></a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+      </ul>
+    </div>
+    <div class="fl_right">
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href="index.html"><span>Fraud</span>Detection</a></h1>
+    </div>
+    <div class="one_half">
+      <ul class="nospace clear">
+        
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
+      <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image: url('{% static "images/demo/backgrounds/01.jpeg" %}');">
+
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <p></p>
+      <h3 class="heading">Financial Fraud Detection</h3>
+      <p>Financial fraud detection involves identifying fraudulent activities or behavior within financial transactions, aiming to prevent and mitigate risks that impact businesses and individuals. With the advent of advanced technologies, machine learning (ML) has emerged as a powerful tool for detecting and preventing fraud. Integrating ML algorithms with the Django framework allows for the development of scalable and efficient web applications that can predict, identify, and prevent fraudulent activities in real-time.</p>
+      <footer><a class="btn" href="{% url 'about' %}">Learn More</a></footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Impact of Financial Security and Compliance</h6>
+      <p>Here are the few impacts</p>
+    </div>
+    <div class="group center">
+      <article class="one_third first"><a class="ringcon btmspace-50" href="#"></a>
+        <h6 class="heading">1. Reduction in Financial Losses</h6>
+        <p>Machine learning-based fraud detection systems can identify fraudulent transactions quickly, minimizing the financial losses caused by fraudulent activities. By automating the detection process, businesses can reduce the time it takes to flag and stop suspicious transactions, leading to fewer financial damages. This proactive approach helps maintain the bottom line and ensures safer financial operations.</p>
+      </article>
+      <article class="one_third"><a class="ringcon btmspace-50" href="#"></a>
+        <h6 class="heading">2. Enhanced Customer Trust and Satisfaction</h6>
+        <p>With reliable fraud detection systems in place, customers are more likely to trust financial institutions and online platforms with their transactions. The ability to quickly identify and prevent fraud builds confidence among users, improving customer satisfaction. Knowing their accounts are protected from fraudulent activities increases customer loyalty and retention.</p>
+      </article>
+      <article class="one_third"><a class="ringcon btmspace-50" href="#"></a>
+        <h6 class="heading">3. Regulatory Compliance and Risk Mitigation</h6>
+        <p>Financial institutions are subject to strict regulatory requirements related to fraud prevention, such as PCI-DSS and GDPR. By implementing machine learning for fraud detection, organizations can comply with these regulations more effectively, reducing the risk of legal penalties. Additionally, early detection of fraudulent activities lowers the risk of reputational damage and regulatory scrutiny.</p>
+      </article>
+    </div>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper gradient">
+  <section id="testimonials" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Why Fraud Detection is Crucial?</h6>
+      <p></p>
+    </div>
+    <article class="one_half first"><img src="images/demo/100x100.png" alt="">
+      Fraudulent activities result in significant financial losses for businesses and consumers. Whether it's through credit card fraud, identity theft, or phishing scams, the economic impact can be devastating.
+      <h6 class="heading"></h6>
+      <em></em></article>
+    <article class="one_half"><img src="images/demo/100x100.png" alt="">
+      Fraud detection systems, especially those powered by machine learning, help to quickly identify suspicious transactions and prevent further losses, reducing the financial burden on affected parties.
+      <h6 class="heading"></h6>
+      <em></em></article>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2024 - All Rights Reserved - <a href="#">Financial Fraud Detection</a></p>
+    <p class="fl_right"></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

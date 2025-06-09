@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="">
+<head>
+<title>Fraud detection - About</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul class="nospace">
+        <li><a href="{% url 'home' %}"><i class="fas fa-home fa-lg"></i></a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href="../index.html"><span>Fraud</span>Detection</a></h1>
+    </div>
+    <div class="one_half">
+      
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
+      <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image: url('{% static "images/demo/backgrounds/01.jpeg" %}');">
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Financial Fraud Detection</h6>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
+      <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h1>Introduction to Fraud Detection</h1>
+      <img class="imgr borderedbox inspace-5" src="{% static 'images/demo/imgr.jpeg' %}" alt="" style="width: 400px; height: auto;">
+      <p>Fraud detection has become a critical aspect of modern financial systems, as fraudulent activities continue to evolve and impact both businesses and consumers. Traditional methods of detecting fraud, such as rule-based systems, have limitations in recognizing complex patterns and adapting to new tactics used by fraudsters.</p>
+      <p>Machine learning (ML) offers an innovative solution by leveraging large volumes of transactional data to identify fraudulent behavior with high accuracy. By using algorithms like decision trees, logistic regression, and neural networks, ML models can classify transactions as legitimate or fraudulent based on historical data, learning from patterns to make predictions on new data.</p>
+      <img class="imgl borderedbox inspace-5" src="{% static 'images/demo/imgl.jpeg' %}" alt="" style="width: 300px; height: auto;">
+      <p>Integrating machine learning with Django, a popular web development framework, enhances the effectiveness and scalability of fraud detection systems. Django’s robust features allow developers to easily build web applications that can process transactions in real-time, providing immediate alerts when fraudulent activity is detected.</p>
+      <p>Django also enables seamless integration with machine learning models, allowing businesses to deploy predictive models and monitor transactions continuously. This combination empowers businesses to quickly identify and block suspicious activities, reducing the financial and reputational risks associated with fraud.</p>
+      <p>The impact of fraud detection systems extends beyond just preventing financial losses. Customers benefit from enhanced security, knowing that their sensitive data is protected and that their transactions are being monitored for fraud.</p>
+      <p>This builds trust and confidence, improving customer retention and satisfaction. Additionally, machine learning models can adapt to emerging fraud tactics, ensuring that fraud detection systems remain relevant in an ever-changing landscape. As businesses strive for compliance with financial regulations such as PCI-DSS and GDPR, these systems also help ensure that organizations meet their legal obligations.</p>
+      <p>In conclusion, fraud detection powered by machine learning and Django provides an effective, scalable, and adaptive solution for protecting financial transactions. With the ability to detect and prevent fraud in real-time, businesses can mitigate financial risks, protect customer data, and ensure compliance, all while maintaining a high level of customer trust. As fraud continues to evolve, the integration of machine learning with web frameworks like Django will play a vital role in securing financial systems globally.</p>
+      
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper gradient">
+  
+    <!-- ################################################################################################ -->
+ 
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2024 - All Rights Reserved - <a href="#">Financial Fraud Detection</a></p>
+    <p class="fl_right"></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
